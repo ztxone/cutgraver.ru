@@ -7,12 +7,6 @@ RewriteEngine On
 	RewriteCond %{HTTP_HOST} ^www\.(.*)$
 	RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
-	# Перенаправляем с HTTP на HTTPS
-	SetEnvIf X-HTTPS 1 HTTPS
-	RewriteBase /
-	RewriteCond %{HTTP:X-HTTPS} !1
-	RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-
 	# Убираем лишние слеши на конце URL
 	RewriteCond %{THE_REQUEST} //
 	RewriteRule ^(.*)$ https://%{HTTP_HOST}/$0 [R=301,L]
@@ -22,6 +16,9 @@ RewriteEngine On
 	RewriteRule ^(.*)index\.html$ https://%{HTTP_HOST}/$1 [R=301,L]
 
 	# Страницы пользовательских ошибок
+	ErrorDocument 400 404.html
+	ErrorDocument 401 404.html
+	ErrorDocument 403 404.html
 	ErrorDocument 404 404.html
 
 </IfModule>
