@@ -92,9 +92,44 @@
 						</h1>
 						<div class="heading-jumbo-small">Металлы, фанера, ДСП, МДФ оргстекло, акрил, литой поликарбонат, вспененый ПВХ, полистирол, и&nbsp;другие пластики</div>
 						<div class="button_line w-clearfix">
-							<a href="mailto:mail@business.com?subject=You&#x27;ve%20got%20mail!" class="button cc-contact-us button_zakaz w-inline-block">
+							<a href="#" class="button cc-contact-us button_zakaz w-inline-block popup-open">
 								<div>Заказать</div>
 							</a>
+								<div class="popup-fade">
+									<div class="popup">
+										<a class="popup-close" href="#">X</a>
+										<script src="https://yastatic.net/q/forms-frontend-ext/_/embed.js"></script>
+<iframe src="https://forms.yandex.ru/u/5fd1eded1df0244410af214b/?iframe=1" frameborder="0" name="ya-form-5fd1eded1df0244410af214b"></iframe>
+									</div>		
+								</div>
+								<script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+								<script>
+								$(document).ready(function($) {
+									$('.popup-open').click(function() {
+										$('.popup-fade').fadeIn();
+										return false;
+									});	
+									
+									$('.popup-close').click(function() {
+										$(this).parents('.popup-fade').fadeOut();
+										return false;
+									});		
+								 
+									$(document).keydown(function(e) {
+										if (e.keyCode === 27) {
+											e.stopPropagation();
+											$('.popup-fade').fadeOut();
+										}
+									});
+									
+									$('.popup-fade').click(function(e) {
+										if ($(e.target).closest('.popup').length == 0) {
+											$(this).fadeOut();					
+										}
+									});
+								});
+								</script>
+
 							<div class="redline"></div>
 						</div>
 					</div>

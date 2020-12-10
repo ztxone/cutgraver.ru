@@ -8,3 +8,7 @@ https://reflex.reacol.ru/domainsettings?&domain=cutgraver.webflow.io
 Этот подход позволяет не производить выгрузку каждый раз, когда Вам нужно изменить собственный код. Так проще производить отладку, удобнее новичкам)
 
 про .htacess https://klondike-studio.ru/standards/standartnyy-htaccess/
+
+формы подключаю по инструкции https://snipp.ru/jquery/modal-dark-background
+
+яндекс формы зареганы на моем аккаунте в яндекс коннект.
