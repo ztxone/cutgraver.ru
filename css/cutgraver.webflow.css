@@ -167,7 +167,20 @@ figcaption {
 	top: 20%;
 	left: 45%;
 	padding: 20px;
-	/*width: 360px;*/
+	/*width: 360px;
+	/*margin-left: -200px;*/
+	background: #fff;
+	/*border: 1px solid orange;*/
+	border-radius: 4px; 
+	z-index: 99999;
+	opacity: 1;	
+}
+/*.popup {
+	position: fixed;
+	top: 20%;
+	left: 45%;
+	padding: 20px;
+	/*width: 360px;
 	margin-left: -200px;
 	background: #fff;
 	border: 1px solid orange;
@@ -175,6 +188,7 @@ figcaption {
 	z-index: 99999;
 	opacity: 1;	
 }
+*/
 .popup-close {
 	position: absolute;
 	top: 10px;
@@ -182,6 +196,24 @@ figcaption {
 }
 
 /*  конец стилей для всплывающего окна форм*/
+
+/* стили для форм*/
+
+.btn {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    border-radius: 0px;
+    position: relative;
+    z-index: 5;
+    background-color: #18519f;
+    color: #fff;
+}
+
+/* конец стили для форм*/
 
 .divider {
   overflow: hidden;
