@@ -35,6 +35,7 @@
 
 		  gtag('config', 'G-MYE1EZHPBZ');
 		</script>
+		<!-- End Global site tag (gtag.js) - Google Analytics -->
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript" >
 		   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -50,6 +51,14 @@
 		</script>
 		<noscript><div><img src="https://mc.yandex.ru/watch/70188733" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->
+		<!-- скрипт всплывающего окна -->
+		        <script type='text/javascript'>
+          (function() {
+            function init() {var scr = document.createElement('script'); scr.type = 'text/javascript'; scr.defer = 'defer'; scr.src = '//cdn.qform24.com/forms.js?v=' + parseInt(new Date().getTime()/1000); var scrInsert = document.getElementsByTagName('script')[0]; scrInsert.parentNode.insertBefore(scr, scrInsert); }
+            var d = document; var w = window;
+            if (d.readyState == 'complete') {init(); } else {if (w.attachEvent) {w.attachEvent('onload', init); } else {w.addEventListener('load', init, false); } } })();
+        </script>
+    <!-- end скрипт всплывающего окна -->
 	</head>
 	<body class="body">
 		<div class="_1st-screen-background">
@@ -94,7 +103,8 @@
 						<div class="heading-jumbo-small">Металлы, фанера, ДСП, МДФ оргстекло, акрил, литой поликарбонат, вспененый ПВХ, полистирол, и&nbsp;другие пластики</div>
 						<!-- вот эта часть: type="button" onclick="ym(70188733,'reachGoal','zakaz1'); return true;" это цель в яндекс метрике -->
 						<div class="button_line w-clearfix" type="button" onclick="ym(70188733,'reachGoal','zakaz1'); return true;" >
-							<a href="https://forms.yandex.ru/u/5fd1eded1df0244410af214b/" class="button cc-contact-us button_zakaz w-inline-block">
+							<!-- вместо тэга <a ... > его содержимое меняем чтобы поставить всплывающую форму на div котороый дает нам сервис qform-->
+							<a class="button cc-contact-us button_zakaz w-inline-block" id="Ez9r94Ah" data-formid="B21607962818Ya7" class="_Forms_generate">
 								<div>Заказать</div>
 							</a>
 							<div class="redline"></div>
