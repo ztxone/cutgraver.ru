@@ -1,22 +1,22 @@
 $(document).ready(function ($) {
   $(".popup-open").click(function () {
-    $(".popup-fade").fadeIn()
+    $(".parent").fadeIn()
     return false
   })
 
   $(".popup-close").click(function () {
-    $(this).parents(".popup-fade").fadeOut()
+    $(this).parents(".parent").fadeOut()
     return false
   })
 
   $(document).keydown(function (e) {
     if (e.keyCode === 27) {
       e.stopPropagation()
-      $(".popup-fade").fadeOut()
+      $(".parent").fadeOut()
     }
   })
 
-  $(".popup-fade").click(function (e) {
+  $(".parent").click(function (e) {
     if ($(e.target).closest(".popup").length == 0) {
       $(this).fadeOut()
     }
