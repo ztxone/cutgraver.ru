@@ -2081,7 +2081,7 @@ figcaption {
   margin: auto;
   background: #fff;
   width: 320px;
-  height: 320px;
+  height: auto;
   padding: 20px;
   border-radius: 8px;
   z-index: 9999;
