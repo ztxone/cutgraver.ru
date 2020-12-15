@@ -9,16 +9,16 @@ $(document).ready(function ($) {
     return false
   })
 
-  $(document).keydown(function (e) {
-    if (e.keyCode === 27) {
-      e.stopPropagation()
-      $(".parent").fadeOut()
-    }
-  })
+  // $(document).keydown(function (e) {
+  //   if (e.keyCode === 27) {
+  //     e.stopPropagation()
+  //     $(".parent").fadeOut()
+  //   }
+  // })
 
-  $(".parent").click(function (e) {
-    if ($(e.target).closest(".popup").length == 0) {
-      $(this).fadeOut()
-    }
-  })
+  // $(".parent").click(function (e) {
+  //   if ($(e.target).closest(".popup").length == 0) {
+  //     $(this).fadeOut()
+  //   }
+  // })
 })
