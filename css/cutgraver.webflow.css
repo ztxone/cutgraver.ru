@@ -2052,7 +2052,7 @@ figcaption {
 
 /*  стили для всплывающего окна форм*/
 ._Forms_generate .fiels_item > label {
-  display: none;
+  display: none !important;
 }
 .parent {
   width: 100%;
@@ -2103,16 +2103,21 @@ figcaption {
   color: #18519f;
 }
 .design__forms_0 {
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
 }
 .centralform {
   padding: 10px 20px;
 }
+.design__forms_0 input[type="text"],
+.design__forms_0 input[type="phone"],
+.design__forms_0 input[type="date"],
+.design__forms_0 input[type="time"],
+.design__forms_0 input[type="email"],
 .centralform .fiels_item input {
   height: 40px;
   width: 100%;
   padding: 8px 17px;
-  border: 1px solid rgba(24, 81, 159, 0.3);
+  border: 1px solid rgba(24, 81, 159, 0.3) !important;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -2120,12 +2125,14 @@ figcaption {
   line-height: 14px;
   color: rgba(24, 81, 159, 0.5);
   margin-bottom: 15px;
+  border-radius: none !important;
 }
 .centralform .fiels_item input:focus,
 .centralform .fiels_item input:active {
   color: rgba(24, 81, 159, 1);
   border: 1px solid rgba(24, 81, 159, 0.8);
   outline: none;
+  border-radius: none;
 }
 .design__forms_0 input[type="submit"],
 .field_submit .btn {
@@ -2139,17 +2146,18 @@ figcaption {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
-  padding: 12px 25px;
+  padding: 12px 25px !important;
   border: none;
+  border-radius: none !important;
   margin-top: 10px;
   background-color: #18519f;
   cursor: pointer;
 }
 .field_submit .button:hover {
-  background-color: #124080;
+  background-color: #124080 !important;
 }
 span .error .error-phone {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 /*  конец стилей для всплывающего окна форм*/
 
